@@ -1,5 +1,5 @@
 context:
-  version: "1.0.3"
+  version: "1.1.0"
 
 # v1 (rattler-build) recipe. conda-forge/staged-recipes requires this format for
 # new submissions -- the old conda-build v0 meta.yaml format is deprecated for
@@ -17,7 +17,7 @@ package:
 
 source:
   url: https://github.com/igmk/pamtra/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 81a30557fe7e1ecdb0db7b9d01b30d8e201bbae6f64ac8e3c5e2bceb81ea4c65
+  sha256: 2bc385ade0604452aa51016f8bf45f2e276ec5b22e41f49c3003a61217dd6905
 
 build:
   number: 0
