@@ -20,7 +20,7 @@ source:
   sha256: 81a30557fe7e1ecdb0db7b9d01b30d8e201bbae6f64ac8e3c5e2bceb81ea4c65
 
 build:
-  number: 0
+  number: 1
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   # meson.build's openblas fallback logic prefers an env-local libopenblas
