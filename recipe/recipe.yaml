@@ -71,6 +71,10 @@ requirements:
     # them into run: automatically with an appropriate version constraint.
     - pooch
     - tqdm
+    # This recipe's --no-deps pip install means nothing here gets pulled
+    # in transitively from pyproject.toml -- pyPamtra/meteoSI.py depends
+    # on meteo_si directly, so it needs to be spelled out explicitly.
+    - meteo_si >=0.2
 
 tests:
   # PAMTRA_DATADIR must be set (even to "") before `import pyPamtra` --
